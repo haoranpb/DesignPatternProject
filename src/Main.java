@@ -1,6 +1,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Farmer farmer = Farmer.getTheFarmer(); // only one farmer
+        Employee empolyee = farmer.employSomeOne(); // all employees using the same memory space
+
     }
 }
