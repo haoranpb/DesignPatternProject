@@ -2,6 +2,7 @@ package Animal;
 import Action.*;
 import Action.ExerciseAction.RunAction;
 import Base.*;
+import Product.sheepFactory;
 
 public  class Sheep extends Animal {
 
@@ -14,6 +15,7 @@ public  class Sheep extends Animal {
 		sleep = new c1sleep();
 		sleep.getself(this);
 		mem = new Memento("alive");
+		product = new sheepFactory();
 	}
 
 

@@ -2,6 +2,7 @@ package Animal;
 import Action.*;
 import Action.ExerciseAction.SwimAction;
 import Base.*;
+import Product.fishFactory;
 
 public class Fish extends Animal {
 
@@ -15,6 +16,7 @@ public class Fish extends Animal {
 		sleep = new c2sleep();
 		sleep.getself(this);
 		mem = new Memento("alive");
+		product = new fishFactory();
 	}
 
 

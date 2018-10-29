@@ -1,5 +1,6 @@
 package Animal;
 import Base.*;
+import Product.chickenFactory;
 import Action.*;
 import Action.ExerciseAction.*;
 
@@ -14,6 +15,7 @@ public class Chicken extends Animal{
 		sleep = new c1sleep();
 		sleep.getself(this);
 		mem = new Memento("alive");
+		product = new chickenFactory();
 		//TODO:在静态list当中加上this
 	}
 	

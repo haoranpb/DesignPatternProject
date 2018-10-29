@@ -8,8 +8,7 @@ public class main{
 		Animal f= new Fish();
 		f.exe();
 		
-		Petdog p = new Petdog();
-		p.sleep();
+		Animal.Petdog.sleep();
 	}
 
 }

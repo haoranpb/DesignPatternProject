@@ -4,6 +4,7 @@ package Animal;
 import Action.*;
 import Action.ExerciseAction.RunAction;
 import Base.*;
+import Product.pigFactory;
 
 public class Pig extends Animal {
 
@@ -17,6 +18,7 @@ public class Pig extends Animal {
 		sleep = new c1sleep();
 		sleep.getself(this);
 		mem = new Memento("alive");
+		product = new pigFactory();
 	}
 	
 	

@@ -22,6 +22,8 @@ public class BreedAction implements AnimalAction {
 		newanimal.mem=new Memento("alive");
 		newanimal.breed = target.breed;
 		newanimal.state=target.state;
+		newanimal.product = target.product;
+		newanimal.shower = target.shower;
 		System.out.println("A new "+newanimal.Animalname+" is born!");
 	}
 
