@@ -5,7 +5,7 @@ import Base.AnimalAction;
 
 public class main{
 	 public static void main(String args[]) {
-		Animal f= new Fish();
+		Animal f= new Chicken();
 		f.exe();
 		
 		Animal.Petdog.sleep();
@@ -14,6 +14,9 @@ public class main{
 		f.setmem();
 		f.setstate();
 		f.getstate();
+		f.sleep();
+		f.producewithdeath();
+		f.producewithoutdeath();
 	}
 
 }

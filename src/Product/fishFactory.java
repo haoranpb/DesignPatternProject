@@ -6,7 +6,6 @@ public class fishFactory extends productAbstractFactory {
 	
 	@Override
 	public void externalPro() {
-		// TODO Auto-generated method stub
 		System.out.println("Fish have no external product.");
 	}
 
