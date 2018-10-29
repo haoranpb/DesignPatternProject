@@ -24,6 +24,7 @@ public class BreedAction implements AnimalAction {
 		newanimal.state=target.state;
 		newanimal.product = target.product;
 		newanimal.shower = target.shower;
+		//TODO:ADD NEWANIMAL INTO LIST
 		System.out.println("A new "+newanimal.Animalname+" is born!");
 	}
 

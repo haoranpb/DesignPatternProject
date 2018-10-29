@@ -10,7 +10,7 @@ public  class Sheep extends Animal {
 		this.Animalname = "Sheep";
 		exercise= new RunAction();
 		exercise.getself(this);
-		breed=new BreedAction();
+
 		breed.getself(this);
 		sleep = new c1sleep();
 		sleep.getself(this);

@@ -11,7 +11,7 @@ public class Fish extends Animal {
 		this.Animalname = "Fish";
 		exercise= new SwimAction();
 		exercise.getself(this);
-		breed=new BreedAction();
+
 		breed.getself(this);
 		sleep = new c2sleep();
 		sleep.getself(this);

@@ -9,6 +9,11 @@ public class main{
 		f.exe();
 		
 		Animal.Petdog.sleep();
+		
+		f.breed();
+		f.setmem();
+		f.setstate();
+		f.getstate();
 	}
 
 }

@@ -9,7 +9,6 @@ public abstract class ShowerAction implements AnimalAction {
 	private ShowerAction nextHandler;
 	@Override
 	public void getself(Animal getanimal) {
-		// TODO Auto-generated method stub
 		self = getanimal;
 	}
 

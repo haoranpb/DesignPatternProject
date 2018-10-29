@@ -10,7 +10,7 @@ public class Chicken extends Animal{
 		
 		exercise= new FlyAction();
 		exercise.getself(this);
-		breed=new BreedAction();
+
 		breed.getself(this);
 		sleep = new c1sleep();
 		sleep.getself(this);

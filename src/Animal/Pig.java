@@ -13,7 +13,7 @@ public class Pig extends Animal {
 		this.Animalname = "Pig";
 		exercise= new RunAction();
 		exercise.getself(this);
-		breed=new BreedAction();
+
 		breed.getself(this);
 		sleep = new c1sleep();
 		sleep.getself(this);
