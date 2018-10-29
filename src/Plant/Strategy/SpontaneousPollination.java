@@ -1,4 +1,21 @@
 package Plant.Strategy;
 
-public class SpontaneousPollination {
+import Plant.Flower.Pistil;
+import Plant.Flower.Stamen;
+import Plant.Mediator.PollinationMediator;
+
+public class SpontaneousPollination implements PollinationStrategy {
+    /**
+     * spontaneous pollination
+     */
+    public void pollinate(){
+        System.out.println("he chooses spontaneous pollination.");
+        //pretend to find one immature stamen and one immature pistil
+        //fake ones
+        Pistil pistil = new Pistil();
+        Stamen stamen = new Stamen();
+        PollinationMediator pm = new PollinationMediator(stamen, pistil);
+        stamen.pollinate(pm);
+        pistil.pollinate(pm);
+    }
 }

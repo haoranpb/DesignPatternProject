@@ -3,6 +3,6 @@ package Plant.Flower;
 public interface Flower {
     String getType();
     void pollinate();
-    void setStatus();
-    FlowerState getState(FlowerState fs);
+    FlowerState getState();
+    void setState(FlowerState fs);
 }

@@ -1,6 +1,8 @@
 package Plant.State;
 
+import Base.Plant;
+
 public interface PlantState {
     String getStateName();
-    void moveToNext();
+    void moveToNext(Plant p);
 }
