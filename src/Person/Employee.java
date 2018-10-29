@@ -21,10 +21,7 @@ public class Employee extends People{
     private Employee(){ }
 
     public void Harvest(){ // Animal or Plants
-        // for plant in PlantList: plant.harvest() --- adaptor
-        // seeds ++(or seeds already ++ in harvest function)
 
-        // for animal in AnimalList: Animal.produceWith/WithoutDeath()
     }
 
     public void Plant(){
@@ -61,6 +58,29 @@ public class Employee extends People{
         Animal chicken = new Chicken();
         Interpreter.inpterpret("add", chicken);
         System.out.println("Employee Successfully Raised A Chicken!");
+    }
+
+    public void produceAnimal(String method){
+        if(method.equals("death")){
+            for(Animal animal: PigList){
+                animal.producewithdeath();
+            }
+            for(Animal animal: FishList){
+                animal.producewithdeath();
+            }
+            for(Animal animal: SheepList){
+                animal.producewithdeath();
+            }
+            for(Animal animal: ChickenList){
+                animal.producewithdeath();
+            }
+            Petdog.bark(); // notify to update
+        }
+        else{
+            for(Animal animal: ChickenList){
+                animal.producewithoutdeath();
+            }
+        }
     }
 
     public void raiseEveryAnimal(){

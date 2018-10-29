@@ -19,4 +19,8 @@ public class Petdog extends c2sleep implements petdogsleep {
 		System.out.println("Pet dog won the fight!");
 	}
 
+	public static void bark(){
+	    System.out.println("Bark");
+    }
+
 }

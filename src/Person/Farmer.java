@@ -32,22 +32,18 @@ public class Farmer extends People{
         employee.raiseChicken();
         employee.raiseFish();
         employee.raiseSheep();
+    }
+
+    public void produceAnimal(String method){ // proxy
+        Employee employee = employSomeOne();
+        System.out.println("An employee become the proxy of the farmer");
+        employee.produceAnimal(method);
+    }
+
+
+    public void shopSomeSeeds(){ // shop all kinds of seeds
 
     }
 
-    //sell items
-//    void sellItem(String ItemName){ // Proxy
-//        if (ItemName.equals("Egg")){
-//            //sell egg
-//
-//        }
-//        else if (){
-//
-//        }
-//        // ...
-//    }
 
-    void shopSomeSeeds(){ // shop all kinds of seeds
-
-    }
 }
