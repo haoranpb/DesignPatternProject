@@ -27,6 +27,7 @@ abstract public class Plant {
     public String getPlantType(){
         return plantType;
     }
+
     /**
      * fertilize the plant
      */
@@ -42,6 +43,7 @@ abstract public class Plant {
             System.out.println("This plant is dead! Leave it alone!");
         }
     }
+
     /**
      * harvest the plant
      * abstract
@@ -84,7 +86,6 @@ abstract public class Plant {
     public boolean isHarvestable(){
         return (this.getPlantState() == "Harvestable");
     }
-
     /**
      * check whether the plant is dead
      * @return whether the plant is dead

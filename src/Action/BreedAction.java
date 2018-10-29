@@ -35,22 +35,21 @@ public class BreedAction implements AnimalAction {
 	
 		switch(target.Animalname){
 		case "Pig":
-			PigList.add(newanimal);
+			Item.Building.AnimalFolds.pigList.add(newanimal);
 			 System.out.println("A new "+newanimal.Animalname+" is born!");
 			break;
 		case "Fish":
-			FishList.add(newanimal);
+			Item.Building.AnimalFolds.fishList.add(newanimal);
 			System.out.println("A new "+newanimal.Animalname+" is born!");
 			break;
 		case "Sheep":
-			SheepList.add(newanimal);
+			Item.Building.AnimalFolds.sheepList.add(newanimal);
 			System.out.println("A new "+newanimal.Animalname+" is born!");
 			break;
 		case "Chicken":
-			ChickenList.add(newanimal);
+			Item.Building.AnimalFolds.chickenList.add(newanimal);
 			System.out.println("A new "+newanimal.Animalname+" is born!");
 			break;
 		}
 	}
-
 }
