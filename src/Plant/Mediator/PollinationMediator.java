@@ -3,6 +3,7 @@ package Plant.Mediator;
 import Plant.Flower.Flower;
 import Plant.Flower.FlowerState;
 import Plant.Flower.Pistil;
+import Plant.Flower.Stamen;
 
 public class PollinationMediator implements Mediator {
     /**
@@ -24,6 +25,21 @@ public class PollinationMediator implements Mediator {
         this.pistil = b;
     }
 
+    /**
+     * set the stamen of the mediator
+     * @param s new stamen
+     */
+    public void setStamen(Stamen s){
+        this.stamen = s;
+    }
+
+    /**
+     * set the pistil of the mediator
+     * @param p new pistil
+     */
+    public void setPistil(Pistil p){
+        this.pistil = p;
+    }
     /**
      * the effect that pistil got from stamen, actually getting the pollen
      */

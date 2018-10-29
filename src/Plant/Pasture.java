@@ -34,6 +34,7 @@ public class Pasture extends Plant {
      * after harvesting one pasture, you will get no seed and 5 pasture product
      */
     public void harvested(){
+        this.plantState.moveToNext(this);
         System.out.println("By harvesting this pasture, you got 5 pasture product.");
         PastureProduct.count += 1;
     }

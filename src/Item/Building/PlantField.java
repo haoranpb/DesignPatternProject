@@ -1,6 +1,8 @@
 package Item.Building;
 
-import src.Base.Plant;
+import Plant.Rice;
+import Plant.Corn;
+import Plant.Pasture;
 
 import java.util.ArrayList;
 
@@ -9,11 +11,11 @@ import java.util.ArrayList;
  * @author YGH
  * @version 2017-10-29 10:10
  */
-public class PlantField extends Plant {
+public class PlantField{
 
-    private static ArrayList<Plant> cornList = new ArrayList();
-    private static ArrayList<Plant> riceList = new ArrayList();
-    private static ArrayList<Plant> pastureList = new ArrayList();
+    public static ArrayList<Corn> cornList = new ArrayList();
+    public static ArrayList<Rice> riceList = new ArrayList();
+    public static ArrayList<Pasture> pastureList = new ArrayList();
 
     public PlantField(){}
 }
