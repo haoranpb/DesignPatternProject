@@ -9,17 +9,14 @@ public class Animal {
 	public String state = "alive";
 	public SleepAction sleep;
 	public String Animalname;
-
 	public void shower() {shower.runaction();}
 	public ExerciseAction exercise;
 	public BreedAction breed = new BreedAction();
-
 	public Memento mem;
 	public ShowerAction shower;
 	public int showerclass;
 	public productAbstractFactory product;
 	public void exe() {	exercise.runaction();}
-
 	public void breed() {breed.runaction();};
 	public void producewithdeath() {product.internalPro();};
 	public void producewithoutdeath() {product.externalPro();};

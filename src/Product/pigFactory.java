@@ -9,6 +9,7 @@ public class pigFactory extends productAbstractFactory {
 	}
 	@Override
 	public void internalPro() {
+		//Porkmeat.amount = Porkmeat.amount+1;
 		System.out.println("add pork");
 		// add pork
 	}

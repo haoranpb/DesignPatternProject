@@ -5,7 +5,6 @@ import Action.ExerciseAction.RunAction;
 public class Petdog extends c2sleep implements petdogsleep {
 
 	public Petdog() {
-		
 	}
 
 	@Override

@@ -12,6 +12,7 @@ public class fishFactory extends productAbstractFactory {
 	@Override
 	public void internalPro() {
 		// TODO add fish
+		//Fishmeat.amount = Fishmeat.amount+1;
 		System.out.println("add fish");
 	}
 }
