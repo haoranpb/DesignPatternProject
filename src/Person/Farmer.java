@@ -1,24 +1,26 @@
+package Person;
+
 // Singleton
-class Farmer {
+public class Farmer {
     private String name;
     private int employeeNumber;
     private static Farmer instance = new Farmer("Farmer509");
 
     private Farmer(String name){
         this.name = name;
-        System.out.println("Farmer \"" + this.name + "\" is successfully created!");
+        System.out.println("Person.Farmer \"" + this.name + "\" is successfully created!");
     }
 
-    static Farmer getTheFarmer(){
+    public static Farmer getTheFarmer(){
         return instance;
     }
 
-    Employee employSomeOne(){
+    public Employee employSomeOne(){
         employeeNumber ++;
         return Employee.getEmployee();
     }
 
-    int getEmployeeNumber(){
+    public int getEmployeeNumber(){
         System.out.println("You currently have " + employeeNumber + " employees!");
         return employeeNumber;
     }
