@@ -1,6 +1,4 @@
 package Person;
-import Animal.*;
-import Base.Animal;
 import static Action.BreedAction.*;
 
 public class People {

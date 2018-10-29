@@ -1,7 +1,5 @@
 package Person;
-
 import Base.Animal;
-
 import static Action.BreedAction.PigList;
 
 public class Interpreter {

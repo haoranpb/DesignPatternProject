@@ -1,6 +1,5 @@
 package Person;
 
-import static Action.BreedAction.*;
 
 // Singleton
 public class Farmer extends People{
@@ -22,9 +21,8 @@ public class Farmer extends People{
         return Employee.getEmployee();
     }
 
-    public int getEmployeeNumber(){
-        System.out.println("You currently have " + employeeNumber + " employees!");
-        return employeeNumber;
+    public void acceptEmployeeVisit(EmloyeeNumberVisitor visitor){
+        visitor.visit(employeeNumber);
     }
 
     //sell items

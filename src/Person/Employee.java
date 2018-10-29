@@ -1,8 +1,13 @@
 package Person;
 import Animal.*;
 import Base.Animal;
+import Person.Order.Broker;
+import Person.Order.raiseChicken;
+import Person.Order.raiseFish;
+import Person.Order.raisePig;
 
 import static Action.BreedAction.*;
+
 
 // Flyweight
 public class Employee extends People{
@@ -40,22 +45,33 @@ public class Employee extends People{
     @Override
     public void raiseFish(){
         Animal fish = new Fish();
-        FishList.add(fish);
+        Interpreter.inpterpret("add", fish);
         System.out.println("Employee Successfully Raised A Fish!");
     }
 
     @Override
     public void raiseSheep(){
         Animal sheep = new Sheep();
-        SheepList.add(sheep);
+        Interpreter.inpterpret("add", sheep);
         System.out.println("Employee Successfully Raised A Sheep!");
     }
 
     @Override
     public void raiseChicken(){
         Animal chicken = new Chicken();
-        ChickenList.add(chicken);
+        Interpreter.inpterpret("add", chicken);
         System.out.println("Employee Successfully Raised A Chicken!");
+    }
+
+    public void raiseEveryAnimal(){
+        Broker broker = new Broker();
+
+        broker.addOrder(new raisePig());
+        broker.addOrder(new raiseFish());
+        broker.addOrder(new raiseFish());
+        broker.addOrder(new raiseChicken());
+
+        broker.launchOrders();
     }
 
     public void getAnimalNumber(){
