@@ -25,6 +25,16 @@ public class Farmer extends People{
         visitor.visit(employeeNumber);
     }
 
+    public void raiseEveryAnimal(){ // facade
+        Employee employee = employSomeOne();
+        System.out.println("The farmer find himself an employee to help him");
+        employee.raisePig();
+        employee.raiseChicken();
+        employee.raiseFish();
+        employee.raiseSheep();
+
+    }
+
     //sell items
 //    void sellItem(String ItemName){ // Proxy
 //        if (ItemName.equals("Egg")){
