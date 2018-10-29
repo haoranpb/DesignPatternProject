@@ -17,6 +17,5 @@ public class main{
 		f.sleep();
 		f.producewithdeath();
 		f.producewithoutdeath();
-	}
-
+	 }
 }
