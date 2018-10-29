@@ -11,14 +11,16 @@ public class Fish extends Animal {
 		this.Animalname = "Fish";
 		exercise= new SwimAction();
 		exercise.getself(this);
-
+		breed=new BreedAction();
 		breed.getself(this);
 		sleep = new c2sleep();
-		sleep.getself(this);
+		sleep.getself(this);	
+		shower = new ShowerAction(1);
+		shower.getself(this);
+		showerclass = 3;
 		mem = new Memento("alive");
 		product = new fishFactory();
 	}
-
 
 
 }

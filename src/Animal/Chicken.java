@@ -10,12 +10,16 @@ public class Chicken extends Animal{
 		
 		exercise= new FlyAction();
 		exercise.getself(this);
-
+		breed=new BreedAction();
 		breed.getself(this);
 		sleep = new c1sleep();
 		sleep.getself(this);
+		shower = new ShowerAction(1);
+		shower.getself(this);
+		showerclass = 1;
 		mem = new Memento("alive");
 		product = new chickenFactory();
+		//TODO:在静态list当中加上this
 	}
 	
 	

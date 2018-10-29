@@ -16,6 +16,7 @@ public class main{
 		f.getstate();
 		f.sleep();
 		f.producewithdeath();
+		f.shower();
 		f.producewithoutdeath();
 	 }
 }
