@@ -1,7 +1,11 @@
 package Person;
+import Animal.*;
+import Base.Animal;
+
+import static Action.BreedAction.*;
 
 // Flyweight
-public class Employee {
+public class Employee extends People{
     private static Employee instance = new Employee();
 
     public static Employee getEmployee(){
@@ -9,8 +13,7 @@ public class Employee {
         return instance;
     }
 
-    private Employee(){
-    }
+    private Employee(){ }
 
     public void Harvest(){ // Animal or Plants
         // for plant in PlantList: plant.harvest() --- adaptor
@@ -27,8 +30,39 @@ public class Employee {
         // fertile plants
     }
 
-    public void growAnimal(){
-        //grow some animals
+    @Override
+    public void raisePig(){
+        Animal pig = new Pig();
+        Interpreter i = new Interpreter();
+        i.inpterpret("add", pig);
+        System.out.println("Employee Successfully Raised A Pig!");
     }
 
+    @Override
+    public void raiseFish(){
+        Animal fish = new Fish();
+        FishList.add(fish);
+        System.out.println("Employee Successfully Raised A Fish!");
+    }
+
+    @Override
+    public void raiseSheep(){
+        Animal sheep = new Sheep();
+        SheepList.add(sheep);
+        System.out.println("Employee Successfully Raised A Sheep!");
+    }
+
+    @Override
+    public void raiseChicken(){
+        Animal chicken = new Chicken();
+        ChickenList.add(chicken);
+        System.out.println("Employee Successfully Raised A Chicken!");
+    }
+
+    public void getAnimalNumber(){
+        System.out.println("The Pig Number is " + PigList.size());
+        System.out.println("The Fish Number is " + FishList.size());
+        System.out.println("The Chicken Number is " + ChickenList.size());
+        System.out.println("The Sheep Number is " + SheepList.size());
+    }
 }

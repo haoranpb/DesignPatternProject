@@ -4,13 +4,15 @@ import Base.Animal;
 import Base.AnimalAction;
 import Base.Memento;
 
+import java.util.Vector;
+
 public class BreedAction implements AnimalAction {
-	public static Animal[] PigList = new Animal[100];
-	public static Animal[] SheepList = new Animal[100];
-	public static Animal[] ChickenList = new Animal[100];
-	public static Animal[] FishList = new Animal[100];
+	public static Vector<Animal> PigList = new Vector<Animal>();
+    public static Vector<Animal> SheepList = new Vector<Animal>();
+    public static Vector<Animal> ChickenList = new Vector<Animal>();
+    public static Vector<Animal> FishList = new Vector<Animal>();
 	public Animal[] worklist;
-	public BreedAction() {};
+	public BreedAction() {}
 	Animal target;
 	@Override
 	public void getself(Animal getanimal) {
@@ -33,19 +35,19 @@ public class BreedAction implements AnimalAction {
 	
 		switch(target.Animalname){
 		case "Pig":
-			//AnimalFold.PigList.Add(newanimal);
+			PigList.add(newanimal);
 			 System.out.println("A new "+newanimal.Animalname+" is born!");
 			break;
 		case "Fish":
-			//AnimalFold.PigList.Add(newanimal);
+			FishList.add(newanimal);
 			System.out.println("A new "+newanimal.Animalname+" is born!");
 			break;
 		case "Sheep":
-			//AnimalFold.PigList.Add(newanimal);
+			SheepList.add(newanimal);
 			System.out.println("A new "+newanimal.Animalname+" is born!");
 			break;
 		case "Chicken":
-			//AnimalFold.PigList.Add(newanimal);
+			ChickenList.add(newanimal);
 			System.out.println("A new "+newanimal.Animalname+" is born!");
 			break;
 		}

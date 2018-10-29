@@ -1,7 +1,9 @@
 package Person;
 
+import static Action.BreedAction.*;
+
 // Singleton
-public class Farmer {
+public class Farmer extends People{
     private String name;
     private int employeeNumber;
     private static Farmer instance = new Farmer("Farmer509");
@@ -16,7 +18,7 @@ public class Farmer {
     }
 
     public Employee employSomeOne(){
-        employeeNumber ++;
+        employeeNumber++;
         return Employee.getEmployee();
     }
 
@@ -36,8 +38,6 @@ public class Farmer {
 //        }
 //        // ...
 //    }
-
-    // use Decorator to harvest and plant all kind of staffs
 
     void shopSomeSeeds(){ // shop all kinds of seeds
 

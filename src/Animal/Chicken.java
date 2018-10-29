@@ -19,7 +19,6 @@ public class Chicken extends Animal{
 		showerclass = 1;
 		mem = new Memento("alive");
 		product = new chickenFactory();
-		//TODO:在静态list当中加上this
 	}
 	
 	
