@@ -23,7 +23,6 @@ public class Animal {
 	public void breed() {breed.runaction();};
 	public void producewithdeath() {product.internalPro();};
 	public void producewithoutdeath() {product.externalPro();};
-	//TODO:产生农产品
 	public void sleep() {sleep.runaction();}
 	public void setstate() {this.state = mem.getstate();}
 	public void getstate() {System.out.println("state is "+this.state);}

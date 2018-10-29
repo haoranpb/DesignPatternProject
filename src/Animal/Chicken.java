@@ -16,7 +16,6 @@ public class Chicken extends Animal{
 		sleep.getself(this);
 		mem = new Memento("alive");
 		product = new chickenFactory();
-		//TODO:在静态list当中加上this
 	}
 	
 	

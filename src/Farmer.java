@@ -36,4 +36,8 @@ class Farmer {
 //    }
 
     // use Decorator to harvest and plant all kind of staffs
+
+    void shopSomeSeeds(){ // shop all kinds of seeds
+
+    }
 }

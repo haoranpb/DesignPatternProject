@@ -10,8 +10,10 @@ class Employee {
     private Employee(){
     }
 
-    void Harvest(){
+    void Harvest(){ // Animal or Plants
         // for plant in PlantList: plant.harvest() --- adaptor
+        // seeds ++(or seeds already ++ in harvest function)
+
         // for animal in AnimalList: Animal.produceWith/WithoutDeath()
     }
 
@@ -19,8 +21,12 @@ class Employee {
         // new some staff
     }
 
-    void Fertile(){
+    void Fertilize(){
         // fertile plants
+    }
+
+    void growAnimal(){
+        //grow some animals
     }
 
 }
