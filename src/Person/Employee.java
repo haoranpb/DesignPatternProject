@@ -33,8 +33,7 @@ public class Employee extends People{
     @Override
     public void raisePig(){
         Animal pig = new Pig();
-        Interpreter i = new Interpreter();
-        i.inpterpret("add", pig);
+        Interpreter.inpterpret("add", pig);
         System.out.println("Employee Successfully Raised A Pig!");
     }
 
