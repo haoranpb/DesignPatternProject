@@ -8,7 +8,7 @@ public class SpontaneousPollination implements PollinationStrategy {
     /**
      * spontaneous pollination
      */
-    public void pollinate(){
+    public void pollinate(String plant){
         System.out.println("he chooses spontaneous pollination.");
         //pretend to find one immature stamen and one immature pistil
         //fake ones
