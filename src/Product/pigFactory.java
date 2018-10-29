@@ -1,5 +1,7 @@
 package Product;
 
+import Item.AgricultureProducts.Fishmeat;
+import Item.AgricultureProducts.Pork;
 import Product.productAbstractFactory;
 
 public class pigFactory extends productAbstractFactory {
@@ -9,7 +11,8 @@ public class pigFactory extends productAbstractFactory {
 	}
 	@Override
 	public void internalPro() {
-		//Porkmeat.amount = Porkmeat.amount+1;
+		Pork.amount = Pork.amount+1;
+		Pork c = new Pork();
 		System.out.println("add pork");
 		// add pork
 	}

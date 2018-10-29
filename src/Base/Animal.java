@@ -16,9 +16,9 @@ public class Animal {
 	public ShowerAction shower;
 	public int showerclass;
 	public productAbstractFactory product;
-	public void exe() {	exercise.runaction();}
+	public void exe() {	exercise.runaction(); }
 	public void breed() {breed.runaction();};
-	public void producewithdeath() {product.internalPro();};
+	public void producewithdeath() {product.internalPro(); this.state = "dead";};
 	public void producewithoutdeath() {product.externalPro();};
 	public void sleep() {sleep.runaction();}
 	public void setstate() {this.state = mem.getstate();}
