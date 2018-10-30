@@ -1,13 +1,8 @@
-package Plant.Flower;
+package Plant.ReproductiveOrgan;
 
 import Plant.Mediator.PollinationMediator;
 
-public class Stamen implements Flower {
-    /**
-     * the state of the stamen
-     */
-    private FlowerState state;
-
+public class Stamen extends ReproductiveOrgan {
     /**
      * Constructor
      */

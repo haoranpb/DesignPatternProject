@@ -1,26 +1,26 @@
 package Plant.Mediator;
 
-import Plant.Flower.Flower;
-import Plant.Flower.FlowerState;
-import Plant.Flower.Pistil;
-import Plant.Flower.Stamen;
+import Plant.ReproductiveOrgan.Flower;
+import Plant.ReproductiveOrgan.FlowerState;
+import Plant.ReproductiveOrgan.Pistil;
+import Plant.ReproductiveOrgan.Stamen;
 
 public class PollinationMediator implements Mediator {
     /**
      * one stamen
      */
-    protected Flower stamen;
+    protected Stamen stamen;
     /**
      * three pistils
      */
-    protected Flower pistil;
+    protected Pistil pistil;
 
     /**
      * Constructor
      * @param stamen the stamen
      * @param pistil the pistil
      */
-    public PollinationMediator(Flower stamen, Flower pistil){
+    public PollinationMediator(Stamen stamen, Pistil pistil){
         this.stamen = stamen;
         this.pistil = pistil;
     }

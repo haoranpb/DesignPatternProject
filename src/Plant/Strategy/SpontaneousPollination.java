@@ -1,10 +1,5 @@
 package Plant.Strategy;
 
-import Base.Plant;
-import Item.Building.PlantField;
-import Plant.Flower.FlowerState;
-import Plant.Flower.Pistil;
-import Plant.Flower.Stamen;
 import Plant.Mediator.PollinationMediator;
 import Plant.Corn;
 import Plant.Rice;
@@ -16,10 +11,10 @@ public class SpontaneousPollination implements PollinationStrategy {
      */
     public void pollinate(Corn c){
         if(c.isMature()){
-            PollinationMediator pm = new PollinationMediator(c.stamen, c.pistil);
+            PollinationMediator pm = new PollinationMediator(c.flower.getStamen(), c.flower.getPistil());
 
-            c.stamen.pollinate(pm);
-            c.pistil.pollinate(pm);
+            c.flower.getStamen().pollinate(pm);
+            c.flower.getPistil().pollinate(pm);
 
             System.out.print("one corn is successfully spontaneous pollinated. ");
             c.plantState.moveToNext(c);
@@ -36,10 +31,10 @@ public class SpontaneousPollination implements PollinationStrategy {
      */
     public void pollinate(Rice r) {
         if (r.isMature()) {
-            PollinationMediator pm = new PollinationMediator(r.stamen, r.pistil);
+            PollinationMediator pm = new PollinationMediator(r.flower.getStamen(), r.flower.getPistil());
 
-            r.stamen.pollinate(pm);
-            r.pistil.pollinate(pm);
+            r.flower.getStamen().pollinate(pm);
+            r.flower.getPistil().pollinate(pm);
 
             System.out.print("one rice is successfully spontaneous pollinated. ");
             r.plantState.moveToNext(r);

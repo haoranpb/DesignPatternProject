@@ -68,6 +68,13 @@ public class Employee extends People{
         }
     }
 
+    public void fertilizePasture(){
+        System.out.println("Pastures needs to be fertilized twice");
+        for (Pasture item : PlantField.pastureList) {
+            item.fertilized();
+        }
+    }
+
     public void pollination(){
         System.out.println("We are going to pollinate all plants");
         for(Corn item : PlantField.cornList){ // corn and rise need to be poll

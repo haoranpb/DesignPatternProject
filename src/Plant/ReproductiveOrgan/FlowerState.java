@@ -1,4 +1,4 @@
-package Plant.Flower;
+package Plant.ReproductiveOrgan;
 
 public enum FlowerState {
     IMMATURE,

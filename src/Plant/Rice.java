@@ -1,19 +1,16 @@
 package Plant;
 
 import Base.Plant;
-import Plant.Flower.Pistil;
-import Plant.Flower.Stamen;
+import Plant.ReproductiveOrgan.Flower;
+import Plant.ReproductiveOrgan.Pistil;
+import Plant.ReproductiveOrgan.Stamen;
 import Plant.Seed.RiceSeed;
 
 public class Rice extends Plant {
     /**
-     * the stamen of the rice
+     * the flower of the rice
      */
-    public Stamen stamen;
-    /**
-     * the pistil of the rice
-     */
-    public Pistil pistil;
+    public Flower flower;
 
     /**
      * Constructor
@@ -22,8 +19,7 @@ public class Rice extends Plant {
     public Rice(){
         super("Rice");
 
-        stamen = new Stamen();
-        pistil = new Pistil();
+        flower = new Flower();
 
         System.out.println("you've got a new rice!");
     }

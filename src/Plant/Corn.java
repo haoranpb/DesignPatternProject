@@ -1,19 +1,16 @@
 package Plant;
 
 import Base.Plant;
-import Plant.Flower.Pistil;
-import Plant.Flower.Stamen;
+import Plant.ReproductiveOrgan.Flower;
+import Plant.ReproductiveOrgan.Pistil;
+import Plant.ReproductiveOrgan.Stamen;
 import Plant.Seed.CornSeed;
 
 public class Corn extends Plant {
     /**
-     * the stamen of the corn
+     * the flower of the corn
      */
-    public Stamen stamen;
-    /**
-     * the pistil of the corn
-     */
-    public Pistil pistil;
+    public Flower flower;
 
     /**
      * Constructor
@@ -22,8 +19,7 @@ public class Corn extends Plant {
     public Corn(){
         super("Corn");
 
-        stamen = new Stamen();
-        pistil = new Pistil();
+        flower = new Flower();
 
         System.out.println("you've got a new corn!");
     }

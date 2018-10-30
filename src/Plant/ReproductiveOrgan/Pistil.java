@@ -1,13 +1,8 @@
-package Plant.Flower;
+package Plant.ReproductiveOrgan;
 
 import Plant.Mediator.PollinationMediator;
 
-public class Pistil implements Flower {
-    /**
-     * the state of the pistil
-     */
-    private FlowerState state;
-
+public class Pistil extends ReproductiveOrgan {
     /**
      * Constructor
      */
