@@ -38,3 +38,41 @@
 
 
 
+## 3.4 Builder
+
+​	建造者模式（Builder Pattern）使用多个简单的对象一步一步构建成一个复杂的对象，我们使用这种模式的目的在于将一个复杂的构建与其表示相分离，使得同样的构建过程可以创建不同的表示，这对于设计者来说是一个解耦的过程。其优点在于用户使用简单，并且可以在不需要知道内部构建细节的情况下构建复杂的对象模型，建造者独立而易扩展，便于控制细节风险。缺点在于产品需要有共同点，范围有限制，且如果内部变化复杂，建造类会比较多。
+
+### 3.4.1 Api描述
+
+​        在我们的架构中，对设定建造房屋的长度、宽度、高度三种尺寸时使用了Builder设计模式，首先定义设定尺寸的过程（Builder），分别是SetLength()、SetWidth()、SetHeight()三者，都声明为抽象方法，具体由子类进行实现，然后创建具体的建造者（ConcreteBuilder）具体实现三个抽象函数。
+
+### 3.4.2  class diagram
+
+​	![](C:/Users/Yuning%20Xia/Desktop/DesignPatternProject-master/doc/uml_images/Method_or_patterns/Item/Builder.png)
+
+## 3.5 Factory Method
+
+​	工厂方法模式（Factory Method）又叫虚拟构造器（Virtual Constructor）模式或者多态工厂模式（Polymorphic Factory），在工厂方法模式中，父类负责定义创建对象的公共接口，而子类则负责生成具体的对象，这样做的目的是将类的实例化操作延迟到子类中完成，即定义了一个用于创建对象的接口，由子类来决定究竟应该实例化哪一个类。其优点在于客户代码可以做到与特定应用无关，适用于任何实体类；能连接并行的类层次结构，具有良好的封装性，代码结构清晰且扩展性好。其缺点在于需要Creator和相应的子类作为Factory Method的载体，如果应用模型不需要Creator和子类存在，则需要增加一个类层次。
+
+### 3.5.1 Api描述
+
+​	在我们的架构中，Fertilizer是抽象产品角色，定义产品的接口，而InorganicFertilizer类和OrganicFertilizer类是具体的产品角色，是实现产品接口的具体产品类，抽象工厂角色是FertilizerAbstractFactory类，用来声明工厂方法，返回Fertilizer，而真实的工厂是InorganicFertilizerFactory类和OrganicFertilizerFactory类，实现工厂方法，由客户调用，返回一个实例。
+
+### 3.5.2 class diagram
+
+​	![](C:/Users/Yuning%20Xia/Desktop/DesignPatternProject-master/doc/uml_images/Method_or_patterns/Item/Factory%20Method.png)
+
+## 3.6 Template Method
+
+​	模板方法模式（Template Method）定义一个模板结构，将具体内容延迟到子类去实现，主要作用是在不改变模板结构的前提下在子类中重新定义模板中的内容，它能提高代码复用性 ，将相同部分的代码放在抽象的父类中，而将不同的代码放入不同的子类中，而且实现了反向控制，通过一个父类调用其子类的操作，通过对子类的具体实现扩展不同的行为，符合“开闭原则”，且提取公共部分代码，便于维护，但其缺点在于颠倒了我们平常的设计习惯：抽象类负责声明最抽象、最一般的事物属性和方法，实现类实现具体的事物属性和方法，所以在复杂的项目中可能会带来代码阅读的难度。
+
+### 3.6.1 Api描述
+
+​	在我们的架构中，我们创建了抽象模板结构即建房的步骤，即LayFoundation()、ConstructBuilding()、ExteriorTrim()三个函数分别代表夯实地基、建造建筑、外围环境修葺，然后创建具体模板，分别重写ConstructBuilding()和ExteriorTrim()这两个函数，代表着建造House、AnimalFold、PlantField、Storage这四种建筑的三个步骤中后两个都是各自不同的，需要分别实现这两个函数的具体功能。
+
+### 3.6.2 class diagram
+
+![](C:/Users/Yuning%20Xia/Desktop/DesignPatternProject-master/doc/uml_images/Method_or_patterns/Item/TemplateMethod.png)
+
+
+
