@@ -1,13 +1,8 @@
-package src.Item.Building;
-
-import src.Item.Building.AnimalFolds;
-import src.Item.Building.House;
-import src.Item.Building.PlantField;
-import src.Item.Building.Storage;
+package Item.Building;
 
 /**
- * Composite (Template Method)
- * @author HXP
+ * Template(Template Method)
+ * @author HXP/XYN
  * @version 2018-10-29 19:30
  */
 public abstract class BuildingConstruction {
@@ -27,7 +22,7 @@ public abstract class BuildingConstruction {
     void LayFoundation(){
         //夯实地基
     }
-    abstract void ConstructionBuilding()
-    abstract void ExteriorTrim()
+    abstract void ConstructionBuilding();
+    abstract void ExteriorTrim();
 
 }

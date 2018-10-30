@@ -1,15 +1,15 @@
 package Item.Building;
 
-import Plant.Rice;
+import Base.Plant;
 import Plant.Corn;
+import Plant.Rice;
 import Plant.Pasture;
-
 import java.util.ArrayList;
 
 /**
- * Composite (Composite Pattern)
- * @author YGH
- * @version 2017-10-29 10:10
+ * Composite&Template(Composite Pattern/Template Method)
+ * @author XYN/HXP
+ * @version 2018-10-29 23:30
  */
 public class PlantField{
 
@@ -20,13 +20,3 @@ public class PlantField{
     public PlantField(){}
 }
 
-public class PlantFieldConstruction extend BuildingConstruction{
-    @Override
-    public void  ConstructionBuilding(){
-        //建造PlantField主体建筑的具体方法
-    }
-    @Override
-    public void  ExteriorTrim(){
-        //修葺PlantField外部环境的具体方法
-    }
-}

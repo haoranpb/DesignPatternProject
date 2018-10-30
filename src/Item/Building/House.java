@@ -1,9 +1,9 @@
 package Item.Building;
 
 /**
- * Leaf (Composite Pattern)
- * @author YGH
- * @version 2017-10-29 10:10
+ * Composite&Template (Composite Pattern/Template Method)
+ * @author XYN/HXP
+ * @version 2018-10-29 23:20
  */
 public class House{
     private String name;
@@ -23,16 +23,5 @@ public class House{
 
     public void printList(String prefix) {
         System.out.println(prefix + "/" + this);
-    }
-}
-
-public class HouseConstruction extend BuildingConstruction{
-    @Override
-    public void  ConstructionBuilding(){
-        //建造House主体建筑的具体方法
-    }
-    @Override
-    public void  ExteriorTrim(){
-        //修葺House外部环境的具体方法
     }
 }

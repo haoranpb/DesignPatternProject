@@ -1,8 +1,14 @@
-package src.Item.Fetilizering;
+package Item.Fertilizering;
 
-import src.Item.Props.Fertilizer;
-import src.Item.Fertilizering.InorganicFertilizer;
-import src.Item.Fertilizering.OrganicFertilizer;
+import Item.Fertilizering.Fertilizer;
+import Item.Fertilizering.InorganicFertilizer;
+import Item.Fertilizering.OrganicFertilizer;
+
+/**
+ * Factory(Factory Pattern)
+ * @author XYN/HXP
+ * @version 2018-10-29 21:10
+ */
 
 /**
  * 化肥生产工厂
