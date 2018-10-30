@@ -1,5 +1,8 @@
 package Person;
-
+import Plant.*;
+import Plant.Seed.CornSeed;
+import Plant.Seed.PastureSeed;
+import Plant.Seed.RiceSeed;
 
 // Singleton
 public class Farmer extends People{
@@ -42,8 +45,20 @@ public class Farmer extends People{
 
 
     public void shopSomeSeeds(){ // shop all kinds of seeds
+        CornSeed.count += 3;
+        PastureSeed.count += 3;
+        RiceSeed.count += 3;
 
+        System.out.println("You just bought 3 corn seeds");
+        System.out.println("You just bought 3 pasture seeds");
+        System.out.println("You just bought 3 rice seeds");
     }
 
+    public void showPlantProduct(){
+        System.out.println("\nLet's see what we have in the storage now.");
+        System.out.println("Pasture seeds: " + PastureSeed.count + "\tPasture product : " + PastureProduct.count);
+        System.out.println("Corn seeds: " + CornSeed.count + "\t\tCorn product : " + CornProduct.count);
+        System.out.println("Rice seeds: " + RiceSeed.count + "\t\tRice product : " + RiceProduct.count);
+    }
 
 }

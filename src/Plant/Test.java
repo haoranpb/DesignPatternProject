@@ -81,7 +81,7 @@ public class Test {
         System.out.println("Maybe we need to buy some seeds.");
 
         System.out.println("\nOops, those corns and rices need to be pollinated.");
-        for(Corn item : PlantField.cornList){
+        for(Corn item : PlantField.cornList){ // corn and rise need to be poll
             PollinationStrategy ps = new SpontaneousPollination();
             ps.pollinate(item);
         }
@@ -92,7 +92,7 @@ public class Test {
         }
 
         show();
-
+// ------
         System.out.println("\nTake a look at those dead plant.");
         for(Corn item : PlantField.cornList){
             item.harvested();

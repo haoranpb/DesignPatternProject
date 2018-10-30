@@ -6,7 +6,13 @@ public class Main {
     public static void main(String[] args) {
         Farmer farmer = Farmer.getTheFarmer(); // only one farmer
         Employee empolyee = farmer.employSomeOne(); // all employees using the same memory space
-        empolyee.raiseEveryAnimal();
-        empolyee.getAnimalNumber();
+//        empolyee.raiseEveryAnimal();
+//        empolyee.getAnimalNumber();
+        farmer.shopSomeSeeds();
+        empolyee.plant();
+        empolyee.fertilize();
+        empolyee.pollination();
+        empolyee.harvest();
+        farmer.showPlantProduct();
     }
 }

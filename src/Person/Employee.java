@@ -2,8 +2,14 @@ package Person;
 import Animal.*;
 import Base.Animal;
 import Item.Building.AnimalFolds;
+import Item.Building.PlantField;
 import Person.Order.*;
-
+import Plant.Abstractory.PlantFactory;
+import Plant.Corn;
+import Plant.Pasture;
+import Plant.Rice;
+import Plant.Strategy.PollinationStrategy;
+import Plant.Strategy.SpontaneousPollination;
 
 
 // Flyweight
@@ -17,16 +23,65 @@ public class Employee extends People{
 
     private Employee(){ }
 
-    public void Harvest(){ // Animal or Plants
-
+    public void harvest(){ // Animal or Plants
+        System.out.println("Harvest all plants");
+        for(Corn item : PlantField.cornList){
+            item.harvested();
+        }
+        for(Rice item : PlantField.riceList){
+            item.harvested();
+        }
+        for(Pasture item : PlantField.pastureList){
+            item.harvested();
+        }
     }
 
-    public void Plant(){
-        // new some staff
+    public void plant(){
+        PlantFactory pf = new PlantFactory();
+        System.out.println("We are planting 5 plant each");
+        for(int number = 0; number < 5; number++) {
+            Corn newCorn = pf.getCorn();
+            if(newCorn == null) break;
+
+            PlantField.cornList.add(newCorn);
+        }
+        for(int number = 0;number < 5; number++) {
+            Rice newRice = pf.getRice();
+            if(newRice == null) break;
+
+            PlantField.riceList.add(newRice);
+        }
+        for(int number = 0;number < 5;number++) {
+            Pasture newPasture = pf.getPasture();
+            if(newPasture == null) break;
+
+            PlantField.pastureList.add(newPasture);
+        }
     }
 
-    public void Fertilize(){
-        // fertile plants
+    public void fertilize(){
+        System.out.println("Fertilize All Plants");
+        for (Corn item : PlantField.cornList) {
+            item.fertilized();
+        }
+        for (Rice item : PlantField.riceList) {
+            item.fertilized();
+        }
+        for (Pasture item : PlantField.pastureList) {
+            item.fertilized();
+        }
+    }
+
+    public void pollination(){
+        System.out.println("We are going to pollinate all plants");
+        for(Corn item : PlantField.cornList){ // corn and rise need to be poll
+            PollinationStrategy ps = new SpontaneousPollination();
+            ps.pollinate(item);
+        }
+        for(Rice item : PlantField.riceList){ // corn and rise need to be poll
+            PollinationStrategy ps = new SpontaneousPollination();
+            ps.pollinate(item);
+        }
     }
 
     @Override

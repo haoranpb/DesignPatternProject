@@ -13,9 +13,9 @@ import java.util.ArrayList;
  */
 public class PlantField{
 
-    public static ArrayList<Corn> cornList = new ArrayList(100);
-    public static ArrayList<Rice> riceList = new ArrayList(100);
-    public static ArrayList<Pasture> pastureList = new ArrayList(100);
+    public static ArrayList<Corn> cornList = new ArrayList<>(100);
+    public static ArrayList<Rice> riceList = new ArrayList<>(100);
+    public static ArrayList<Pasture> pastureList = new ArrayList<>(100);
 
     public PlantField(){}
 }
