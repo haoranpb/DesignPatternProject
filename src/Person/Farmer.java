@@ -1,8 +1,8 @@
 package Person;
+import Item.Building.Building;
 import Plant.*;
-import Plant.Seed.CornSeed;
-import Plant.Seed.PastureSeed;
-import Plant.Seed.RiceSeed;
+import Plant.Seed.*;
+import Item.AgricultureProducts.*;
 
 // Singleton
 public class Farmer extends People{
@@ -59,6 +59,24 @@ public class Farmer extends People{
         System.out.println("Pasture seeds: " + PastureSeed.count + "\tPasture product : " + PastureProduct.count);
         System.out.println("Corn seeds: " + CornSeed.count + "\t\tCorn product : " + CornProduct.count);
         System.out.println("Rice seeds: " + RiceSeed.count + "\t\tRice product : " + RiceProduct.count);
+    }
+
+    public void showAnimalProcut(){
+        System.out.println("Eggs Number: " +Eggs.amount);
+        System.out.println("ChikenMeat: " + Chickenmeat.amount);
+        System.out.println("Fishmeat Number: " + Fishmeat.amount);
+        System.out.println("Mutton Number: " + Mutton.amount);
+        System.out.println("Pork Number: " + Pork.amount);
+    }
+
+    public Building buildBuilding(){
+        Building building = new Building.Builder()
+                .setHeight(100)
+                .setLength(100)
+                .setWidth(100)
+                .construct();
+        System.out.println("We have constructed a new building!");
+        return building;
     }
 
 }

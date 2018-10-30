@@ -1,15 +1,11 @@
 package Person;
 import Animal.*;
 import Base.Animal;
-import Item.Building.AnimalFolds;
-import Item.Building.PlantField;
+import Item.Building.*;
 import Person.Order.*;
 import Plant.Abstractory.PlantFactory;
-import Plant.Corn;
-import Plant.Pasture;
-import Plant.Rice;
-import Plant.Strategy.PollinationStrategy;
-import Plant.Strategy.SpontaneousPollination;
+import Plant.*;
+import Plant.Strategy.*;
 
 
 // Flyweight
