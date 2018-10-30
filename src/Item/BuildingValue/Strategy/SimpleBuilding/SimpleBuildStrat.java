@@ -17,6 +17,6 @@ public class SimpleBuildStrat implements BuildStrategy {
     }
     @Override
     public String toString() {
-        return "Simple food is cooked.";
+        return "Simple building is built.";
     }
 }

@@ -4,13 +4,13 @@ import Item.BuildingValue.BuildingForPeople;
 
 /**
  * Cook strategy(Strategy & Prototype)
- * @author YGH
- * @version 2017-10-29 02:00
+ * @author XYN/HXP
+ * @version 2018-10-29 02:00
  */
 public interface BuildStrategy {
     /**
      * Virtual method (for polymorphism).
-     * @return foodForPerson
+     * @return BuildingForPeople
      *
      */
     public abstract BuildingForPeople building();

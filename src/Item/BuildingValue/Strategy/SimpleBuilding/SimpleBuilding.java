@@ -32,6 +32,6 @@ public class SimpleBuilding extends BuildingForPeople {
 
     @Override
     public String toString() {
-        return "Here is a simple food.";
+        return "Here is a simple building.";
     }
 }

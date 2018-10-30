@@ -30,6 +30,6 @@ public class LuxuryBuilding extends BuildingForPeople {
     }
     @Override
     public String toString() {
-        return "Here is a luxury food.";
+        return "Here is a luxury building.";
     }
 }

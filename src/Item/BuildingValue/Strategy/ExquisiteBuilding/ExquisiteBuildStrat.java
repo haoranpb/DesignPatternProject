@@ -19,6 +19,6 @@ public class ExquisiteBuildStrat implements BuildStrategy {
 
     @Override
     public String toString() {
-        return "Exquisite food is built.";
+        return "Exquisite building is built.";
     }
 }
