@@ -1,7 +1,7 @@
 package Base;
 import Animal.Petdog;
 import Action.*;
-import Action.ExerciseAction.ExerciseAction;
+import Action.ExerciseAction.*;
 import Product.*;
 
 public class Animal {
@@ -26,6 +26,24 @@ public class Animal {
 	public void setmem() { mem.setstate(this.state);}
 	public void fightWithDog() {
 		Petdog.fight();
+	}
+	public void exewithset(String exer) {
+		ExerciseAction e = null;
+		if(exer == "Run") {
+			System.out.println("run");
+			e = new RunAction();
+		}
+		else if(exer == "Swim") {
+			e  = new SwimAction();
+		}
+		else if(exer == "Fly") {
+			e  = new FlyAction();
+		}
+		else {
+			return;
+		}
+		e.getself(this);
+		e.runaction();
 	}
 }
 

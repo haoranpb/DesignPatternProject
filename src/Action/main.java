@@ -15,8 +15,10 @@ public class main{
 		f.setstate();
 		f.getstate();
 		f.sleep();
+		f.producewithoutdeath();
 		f.producewithdeath();
 		f.shower();
-		f.producewithoutdeath();
+		
+		f.exewithset("Run");
 	 }
 }
