@@ -9,6 +9,12 @@ public class ShowerAction implements AnimalAction {
 	Animal self;
 	public ShowerAction nextHandler;
 	public int mode = 0;
+	
+	
+	public ShowerAction(int a) {
+		nextHandler = new c1shower();
+
+	}
 	@Override
 	public void getself(Animal getanimal) {
 		// TODO Auto-generated method stub
@@ -17,18 +23,17 @@ public class ShowerAction implements AnimalAction {
 			nextHandler.self = getanimal;
 		}
 	}
-	public ShowerAction(int a) {
-		nextHandler = new c1shower();
-
-	}
 	public ShowerAction() {
 	}
 	@Override
 	public void runaction() {
-
-		if(this.mode == self.showerclass)
+		if(nextHandler!=null) {
+			nextHandler.self = self;
+		}
+		
+		if(mode == self.showerclass)
 		{
-
+			System.out.println("succ");
 			if (mode == 1)
 				System.out.println(self.Animalname + " do shower in sand.");
 			//TODO: do shower
