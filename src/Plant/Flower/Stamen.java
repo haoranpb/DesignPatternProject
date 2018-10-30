@@ -44,7 +44,6 @@ public class Stamen implements Flower {
      * for the stamen, it releases the pollen
      */
     public void pollinate(){
-        System.out.println("the stamen just released the pollen.");
         this.setState(FlowerState.MATURE);
     }
 

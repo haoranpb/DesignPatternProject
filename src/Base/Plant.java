@@ -1,5 +1,6 @@
 package Base;
 
+import Plant.State.GrowingState;
 import Plant.State.PlantState;
 
 abstract public class Plant {
@@ -18,6 +19,7 @@ abstract public class Plant {
      */
     public Plant(String type){
         this.plantType = type;
+        this.setPlantState(new GrowingState());
     }
 
     /**
@@ -29,18 +31,24 @@ abstract public class Plant {
     }
 
     /**
+     * see what state the plant is
+     */
+    public void whatNow(){
+        System.out.println("The " + this.getPlantType() + " is now " + this.getPlantState());
+    }
+
+    /**
      * fertilize the plant
      */
     public void fertilized(){
         if(this.isGrowing()) {
             this.plantState.moveToNext(this);
-            System.out.println("This growing plant is now mature.");
         }else if(this.isMature()) {
-            System.out.println("This mature plant needs to be pollinated. Stop fertilizing it.");
+            System.out.println("This mature " + this.getPlantType() +" needs to be pollinated. Stop fertilizing it.");
         }else if(this.isHarvestable()) {
-            System.out.println("This plant is now harvestable. Stop fertilizing it.");
+            System.out.println("This " + this.getPlantType() +" is now harvestable. Stop fertilizing it.");
         }else if(this.isDead()){
-            System.out.println("This plant is dead! Leave it alone!");
+
         }
     }
 

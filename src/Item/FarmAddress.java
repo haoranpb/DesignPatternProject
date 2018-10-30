@@ -7,7 +7,7 @@ package Item;// Singleton
 
 class FarmAddress {
     private String name;
-    private static FarmAddress instance = new FarmAddress("Caoan Road 4800");
+    private static FarmAddress instance = new FarmAddress("Cao'An Highway 4800");
 
     private FarmAddress(String name){
         this.name = name;

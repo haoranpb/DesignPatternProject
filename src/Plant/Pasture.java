@@ -19,14 +19,12 @@ public class Pasture extends Plant {
     public void fertilized() {
         if (this.isGrowing()) {
             this.plantState.moveToNext(this);
-            System.out.println("This growing plant is now mature.");
         } else if (this.isMature()) {
             this.plantState.moveToNext(this);
-            System.out.println("This mature plant is now harvestable.");
         } else if (this.isHarvestable()) {
-            System.out.println("This plant is now harvestable. Stop fertilizing it.");
+            System.out.println("This " + this.getPlantType() +" is now harvestable. Stop fertilizing it.");
         } else if (this.isDead()) {
-            System.out.println("This plant is dead! Leave it alone!");
+            System.out.println("This " + this.getPlantType() +" is dead! Leave it alone!");
         }
     }
     /**
@@ -34,9 +32,15 @@ public class Pasture extends Plant {
      * after harvesting one pasture, you will get no seed and 5 pasture product
      */
     public void harvested(){
-        this.plantState.moveToNext(this);
-        System.out.println("By harvesting this pasture, you got 5 pasture product.");
-        PastureProduct.count += 1;
+        if(this.isHarvestable()) {
+            this.plantState.moveToNext(this);
+            System.out.println("By harvesting this pasture, you got 5 pasture product.");
+            PastureProduct.count += 5;
+        }else if(this.isDead()) {
+            //do nothing
+        }else{
+            System.out.println("This " + this.getPlantType() + " hasn't been harvestable yet. fertilize it.");
+        }
     }
 
 }

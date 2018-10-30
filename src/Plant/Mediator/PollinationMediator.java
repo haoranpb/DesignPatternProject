@@ -17,12 +17,12 @@ public class PollinationMediator implements Mediator {
 
     /**
      * Constructor
-     * @param a the stamen
-     * @param b the pistil
+     * @param stamen the stamen
+     * @param pistil the pistil
      */
-    public PollinationMediator(Flower a, Flower b){
-        this.stamen = a;
-        this.pistil = b;
+    public PollinationMediator(Flower stamen, Flower pistil){
+        this.stamen = stamen;
+        this.pistil = pistil;
     }
 
     /**
@@ -45,13 +45,12 @@ public class PollinationMediator implements Mediator {
      */
     public void stamenAffectPistil() {
         this.pistil.setState(FlowerState.MATURE);
-        System.out.println("the pistil just got the pollen. pollination is complete.");
     }
 
     /**
      * the effect that stamen got from pistil, actually nothing
      */
     public void pistilAffectStamen(){
-        System.out.println("pollination is complete.");
+        //do nothing
     }
 }

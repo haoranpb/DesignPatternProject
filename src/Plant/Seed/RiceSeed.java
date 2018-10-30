@@ -4,7 +4,7 @@ public class RiceSeed implements Seed {
     /**
      * number of rice seeds
      */
-    public static int count = 0;
+    public static int count = 3;
 
     /**
      * get the name of the seed

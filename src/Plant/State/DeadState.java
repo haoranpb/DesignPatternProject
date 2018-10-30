@@ -20,6 +20,6 @@ public class DeadState implements PlantState {
      * @param p the specific plant
      */
     public void moveToNext(Plant p){
-        System.out.println("this is a dead plant. leave it alone.");
+        System.out.println("this is a dead " + p.getPlantType() +". leave it alone.");
     }
 }

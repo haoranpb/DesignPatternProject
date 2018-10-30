@@ -10,46 +10,43 @@ import Plant.Corn;
 import Plant.Rice;
 
 public class SpontaneousPollination implements PollinationStrategy {
-    public PollinationMediator pm = new PollinationMediator(null,null);
+    /**
+     * spontaneous pollination for one single corn
+     * @param c the specific corn
+     */
+    public void pollinate(Corn c){
+        if(c.isMature()){
+            PollinationMediator pm = new PollinationMediator(c.stamen, c.pistil);
+
+            c.stamen.pollinate(pm);
+            c.pistil.pollinate(pm);
+
+            System.out.print("one corn is successfully spontaneous pollinated. ");
+            c.plantState.moveToNext(c);
+        }else if(c.isDead()) {
+            //do nothing
+        }else{
+            System.out.println("this plant can't be pollinated! find another one.");
+        }
+    }
 
     /**
-     * spontaneous pollination
-     * @param plant type of plant
+     * artificial pollination for one single rice
+     * @param r the specific rice
      */
-    public void pollinate(String plant){
-        System.out.println("he chooses spontaneous pollination.");
+    public void pollinate(Rice r) {
+        if (r.isMature()) {
+            PollinationMediator pm = new PollinationMediator(r.stamen, r.pistil);
 
-        PollinationMediator pm = new PollinationMediator(null,null);
+            r.stamen.pollinate(pm);
+            r.pistil.pollinate(pm);
 
-        switch(plant){
-            case "Corn":
-                for(Corn c : PlantField.cornList) {
-                    if (c.plantState.getStateName() == "Mature") {
-                        pm.setPistil(c.pistil);
-                        pm.setStamen(c.stamen);
-
-                        c.stamen.pollinate(pm);
-                        c.pistil.pollinate(pm);
-
-                        c.plantState.moveToNext(c);
-                        System.out.println("spontaneous pollination completed. Now the plant is harvestable!");
-                    }
-                }
-                break;
-            case "Rice":
-                for(Rice r : PlantField.riceList){
-                    if(r.plantState.getStateName() == "Mature"){
-                        pm.setStamen(r.stamen);
-                        pm.setPistil(r.pistil);
-
-                        r.stamen.pollinate(pm);
-                        r.pistil.pollinate(pm);
-
-                        r.plantState.moveToNext(r);
-                        System.out.println("spontaneous pollination completed. Now the plant is harvestable!");
-                    }
-                }
-                break;
+            System.out.print("one rice is successfully spontaneous pollinated. ");
+            r.plantState.moveToNext(r);
+        }else if(r.isDead()) {
+            //do nothing
+        }else{
+            System.out.println("this plant can't be pollinated! find another one.");
         }
     }
 }

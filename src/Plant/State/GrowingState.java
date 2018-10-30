@@ -22,7 +22,7 @@ public class GrowingState implements PlantState {
      * @param p the specific plant
      */
     public void moveToNext(Plant p){
-        System.out.println("the growing plant is now mature.");
+        System.out.println("the growing " + p.getPlantType() +" is now mature.");
         p.setPlantState(new MatureState());
     }
 }

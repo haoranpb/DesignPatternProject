@@ -43,7 +43,6 @@ public class Pistil implements Flower {
      * for the pistil, it gets the pollen from one stamen
      */
     public void pollinate(){
-        System.out.println("the pistil just got the pollen. it's pollinated.");
         this.setState(FlowerState.MATURE);
     }
 

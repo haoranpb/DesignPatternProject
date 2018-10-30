@@ -22,7 +22,7 @@ public class HarvestableState implements PlantState {
      * @param p the specific plant
      */
     public void moveToNext(Plant p){
-        System.out.println("the harvestable plant has been harvested. now it's dead.");
+        System.out.println("the harvestable " + p.getPlantType() +" has been harvested. now it's dead.");
         p.setPlantState(new DeadState());
     }
 }
