@@ -1,3 +1,9 @@
+/**
+ * spontaneous pollination
+ * implements pollination strategy
+ * @author TMY, QXC
+ */
+
 package Plant.Strategy;
 
 import Plant.Mediator.PollinationMediator;

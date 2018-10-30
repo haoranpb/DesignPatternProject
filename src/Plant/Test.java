@@ -1,7 +1,12 @@
+/**
+ * Test
+ * for testing
+ * @author TMY, QXC
+ */
+
 package Plant;
 
-import Base.Plant;
-import Plant.Abstractory.PlantFactory;
+import Plant.AbstractFactory.PlantFactory;
 import Plant.Seed.CornSeed;
 import Plant.Seed.PastureSeed;
 import Plant.Seed.RiceSeed;

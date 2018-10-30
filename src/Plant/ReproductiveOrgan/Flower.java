@@ -1,3 +1,10 @@
+/**
+ * flower
+ * derived from reproductive organ
+ * contain pistil and stamen
+ * @author TMY, QXC
+ */
+
 package Plant.ReproductiveOrgan;
 
 public class Flower extends ReproductiveOrgan{
@@ -26,10 +33,24 @@ public class Flower extends ReproductiveOrgan{
     }
 
     /**
+     * add a stamen
+     */
+    public void addStamen(Stamen stamen){
+        this.stamen = stamen;
+    }
+
+    /**
      * get the pistil
      */
     public Pistil getPistil(){
         return pistil;
+    }
+
+    /**
+     * add a pistil
+     */
+    public void addPistil(Pistil pistil){
+        this.pistil = pistil;
     }
 
     /**

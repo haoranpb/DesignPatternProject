@@ -1,6 +1,11 @@
-package Plant.Abstractory;
+/**
+ * Plant Factory
+ * implements abstract factory
+ * @author TMY, QXC
+ */
 
-import Base.Plant;
+package Plant.AbstractFactory;
+
 import Plant.Rice;
 import Plant.Corn;
 import Plant.Pasture;
@@ -8,7 +13,7 @@ import Plant.Seed.CornSeed;
 import Plant.Seed.PastureSeed;
 import Plant.Seed.RiceSeed;
 
-public class PlantFactory implements Abstractory{
+public class PlantFactory implements AbstractFactory {
     /**
      * get a new rice
      * @return new rice

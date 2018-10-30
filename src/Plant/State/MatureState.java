@@ -1,3 +1,9 @@
+/**
+ * mature state
+ * implements plant state
+ * @author TMY, QXC
+ */
+
 package Plant.State;
 
 import Base.Plant;

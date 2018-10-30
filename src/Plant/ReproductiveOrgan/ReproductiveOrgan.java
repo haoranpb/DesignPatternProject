@@ -1,3 +1,8 @@
+/**
+ * abstract class reproductive organ
+ * @author TMY, QXC
+ */
+
 package Plant.ReproductiveOrgan;
 
 abstract public class ReproductiveOrgan {

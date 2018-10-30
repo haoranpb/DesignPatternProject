@@ -1,3 +1,9 @@
+/**
+ * pasture seed
+ * for counting
+ * @author TMY, QXC
+ */
+
 package Plant.Seed;
 
 public class PastureSeed implements Seed {

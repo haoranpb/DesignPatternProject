@@ -1,3 +1,9 @@
+/**
+ * corn plant
+ * derives from plant
+ * @author TMY, QXC
+ */
+
 package Plant;
 
 import Base.Plant;

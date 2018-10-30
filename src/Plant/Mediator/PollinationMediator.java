@@ -1,3 +1,9 @@
+/**
+ * Mediator for pollination
+ * implements Mediator
+ * @author TMY, QXC
+ */
+
 package Plant.Mediator;
 
 import Plant.ReproductiveOrgan.Flower;

@@ -1,3 +1,9 @@
+/**
+ * pistil
+ * derived from reproductive organ
+ * @author TMY, QXC
+ */
+
 package Plant.ReproductiveOrgan;
 
 import Plant.Mediator.PollinationMediator;

@@ -1,3 +1,9 @@
+/**
+ * State
+ * interface plant state
+ * @author TMY, QXC
+ */
+
 package Plant.State;
 
 import Base.Plant;

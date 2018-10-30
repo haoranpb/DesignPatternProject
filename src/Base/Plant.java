@@ -1,3 +1,8 @@
+/**
+ * The abstract class plant
+ * @author TMY, QXC
+ */
+
 package Base;
 
 import Plant.State.GrowingState;

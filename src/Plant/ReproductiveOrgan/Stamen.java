@@ -1,3 +1,9 @@
+/**
+ * stamen
+ * derives from reproductive plant
+ * @author TMY, QXC
+ */
+
 package Plant.ReproductiveOrgan;
 
 import Plant.Mediator.PollinationMediator;

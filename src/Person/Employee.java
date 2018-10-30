@@ -3,7 +3,7 @@ import Animal.*;
 import Base.Animal;
 import Item.Building.*;
 import Person.Order.*;
-import Plant.Abstractory.PlantFactory;
+import Plant.AbstractFactory.PlantFactory;
 import Plant.*;
 import Plant.Strategy.*;
 

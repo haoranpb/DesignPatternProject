@@ -1,3 +1,9 @@
+/**
+ * corn seed
+ * for counting
+ * @author TMY, QXC
+ */
+
 package Plant.Seed;
 
 public class CornSeed implements Seed {

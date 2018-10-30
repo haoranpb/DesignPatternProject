@@ -1,3 +1,9 @@
+/**
+ * rice seed
+ * for counting
+ * @author TMY, QXC
+ */
+
 package Plant.Seed;
 
 public class RiceSeed implements Seed {
