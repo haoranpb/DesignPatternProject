@@ -1,4 +1,5 @@
 package Person;
+import Base.Animal;
 import Item.Building.Building;
 import Person.Order.RaiseChicken;
 import Person.Order.RaiseFish;
@@ -7,6 +8,8 @@ import Person.Order.RaiseSheep;
 import Plant.*;
 import Plant.Seed.*;
 import Item.AgricultureProducts.*;
+
+import java.util.ArrayList;
 
 // Singleton
 public class Farmer extends People{
@@ -87,6 +90,16 @@ public class Farmer extends People{
                 .construct();
         System.out.println("We have constructed a new building!");
         return building;
+    }
+
+    public void getAnimalNumber(){
+        System.out.println("The Chicken, Fish, Sheep, Pig Number is:");
+
+        AnimalList animalList = new AnimalList();
+        for(AnimalList.Interator iter = animalList.getIterator(); iter.hasNext();){
+            ArrayList<Animal> tmp = iter.next();
+            System.out.println(tmp.size());
+        }
     }
 
 }

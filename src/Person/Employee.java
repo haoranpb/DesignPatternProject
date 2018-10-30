@@ -7,6 +7,8 @@ import Plant.AbstractFactory.PlantFactory;
 import Plant.*;
 import Plant.Strategy.*;
 
+import java.util.ArrayList;
+
 
 // Flyweight
 public class Employee extends People{
@@ -150,9 +152,12 @@ public class Employee extends People{
     }
 
     public void getAnimalNumber(){
-        System.out.println("The Pig Number is " + AnimalFolds.pigList.size());
-        System.out.println("The Fish Number is " + AnimalFolds.fishList.size());
-        System.out.println("The Chicken Number is " + AnimalFolds.chickenList.size());
-        System.out.println("The Sheep Number is " + AnimalFolds.sheepList.size());
+        System.out.println("The Chicken, Fish, Sheep, Pig Number is:");
+
+        AnimalList animalList = new AnimalList();
+        for(AnimalList.Interator iter = animalList.getIterator(); iter.hasNext();){
+            ArrayList<Animal> tmp = iter.next();
+            System.out.println(tmp.size());
+        }
     }
 }
