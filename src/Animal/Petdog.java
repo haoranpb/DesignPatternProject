@@ -2,7 +2,7 @@ package Animal;
 import Action.*;
 import Action.ExerciseAction.RunAction;
 
-public class Petdog extends c2sleep implements petdogsleep {
+public class Petdog extends c1sleep implements petdogsleep {
 
 	public Petdog() {
 	}
