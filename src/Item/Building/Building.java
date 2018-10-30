@@ -35,7 +35,7 @@ public class Building {
         this.Height = Height;
     }
 
-    static class Builder{
+    public static class Builder{
         private double Length;
         private double Width;
         private double Height;

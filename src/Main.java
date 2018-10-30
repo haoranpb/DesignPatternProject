@@ -1,3 +1,4 @@
+import Item.Building.Building;
 import Person.*;
 
 // 13120519039
@@ -14,5 +15,12 @@ public class Main {
         empolyee.pollination();
         empolyee.harvest();
         farmer.showPlantProduct();
+
+        Building building = new Building.Builder()
+                .setHeight(100)
+                .setLength(100)
+                .setWidth(100)
+                .construct();
+        System.out.println("We have constructed a new building!");
     }
 }
