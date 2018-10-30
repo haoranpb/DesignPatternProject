@@ -1,5 +1,9 @@
 package Person;
 import Item.Building.Building;
+import Person.Order.RaiseChicken;
+import Person.Order.RaiseFish;
+import Person.Order.RaisePig;
+import Person.Order.RaiseSheep;
 import Plant.*;
 import Plant.Seed.*;
 import Item.AgricultureProducts.*;
@@ -28,16 +32,22 @@ public class Farmer extends People{
         visitor.visit(employeeNumber);
     }
 
-    public void raiseEveryAnimal(){ // facade
+    public void raiseEveryAnimal(){ // Facade
         Employee employee = employSomeOne();
         System.out.println("The farmer find himself an employee to help him");
-        employee.raisePig();
-        employee.raiseChicken();
-        employee.raiseFish();
-        employee.raiseSheep();
+
+        RaiseChicken rc = new RaiseChicken();
+        RaiseFish rf = new RaiseFish();
+        RaisePig rp = new RaisePig();
+        RaiseSheep rs = new RaiseSheep();
+
+        rc.execute();
+        rp.execute();
+        rf.execute();
+        rs.execute();
     }
 
-    public void produceAnimal(String method){ // proxy
+    public void produceAnimal(String method){ // Proxy
         Employee employee = employSomeOne();
         System.out.println("An employee become the proxy of the farmer");
         employee.produceAnimal(method);
