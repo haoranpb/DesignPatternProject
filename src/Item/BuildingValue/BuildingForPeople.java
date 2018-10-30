@@ -20,7 +20,7 @@ public abstract class BuildingForPeople{
 
     /**
      * Get new building instance by clone; virtual method.
-     * @return BuildingForPeople
+     * @return buildingForPeople
      */
     protected abstract BuildingForPeople clone();
 
