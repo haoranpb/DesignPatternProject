@@ -1,13 +1,14 @@
 package Person;
-import static Action.BreedAction.*;
+
+import Item.Building.AnimalFolds;
 
 public class People {
 
     public void getAnimalNumber(){
-        System.out.println("The Pig Number is " + PigList.size());
-        System.out.println("The Fish Number is " + FishList.size());
-        System.out.println("The Chicken Number is " + ChickenList.size());
-        System.out.println("The Sheep Number is " + SheepList.size());
+        System.out.println("The Pig Number is " + AnimalFolds.pigList.size());
+        System.out.println("The Fish Number is " + AnimalFolds.fishList.size());
+        System.out.println("The Chicken Number is " + AnimalFolds.chickenList.size());
+        System.out.println("The Sheep Number is " + AnimalFolds.sheepList.size());
     }
 
     public void raisePig(){}

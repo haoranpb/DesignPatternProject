@@ -1,13 +1,14 @@
 package Person.Order;
 import Animal.*;
 import Base.Animal;
+import Item.Building.AnimalFolds;
 import Person.Interpreter;
 
 
-public class raiseFish implements Order {
+public class RaiseFish implements Order {
     public void execute(){
         Animal fish = new Fish();
-        Interpreter.inpterpret("add", fish);
+        AnimalFolds.fishList.add(fish);
         System.out.println("Employee Successfully Raised A Fish!");
     }
 }

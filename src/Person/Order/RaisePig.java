@@ -3,7 +3,7 @@ import Animal.*;
 import Base.Animal;
 import Person.Interpreter;
 
-public class raisePig implements Order {
+public class RaisePig implements Order {
     public void execute(){
         Animal pig = new Pig();
         Interpreter.inpterpret("add", pig);

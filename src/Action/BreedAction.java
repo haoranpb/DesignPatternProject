@@ -4,13 +4,8 @@ import Base.Animal;
 import Base.AnimalAction;
 import Base.Memento;
 
-import java.util.Vector;
 
 public class BreedAction implements AnimalAction {
-	public static Vector<Animal> PigList = new Vector<Animal>();
-    public static Vector<Animal> SheepList = new Vector<Animal>();
-    public static Vector<Animal> ChickenList = new Vector<Animal>();
-    public static Vector<Animal> FishList = new Vector<Animal>();
 	public Animal[] worklist;
 	public BreedAction() {}
 	Animal target;

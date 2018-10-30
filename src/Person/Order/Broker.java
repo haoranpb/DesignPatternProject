@@ -3,7 +3,7 @@ package Person.Order;
 import java.util.Vector;
 
 public class Broker {
-    private Vector<Order>orderList = new Vector<Order>();
+    private Vector<Order>orderList = new Vector<>();
 
     public void addOrder(Order order){
         orderList.add(order);
