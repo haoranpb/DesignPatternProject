@@ -33,7 +33,7 @@ public class ShowerAction implements AnimalAction {
 		
 		if(mode == self.showerclass)
 		{
-			System.out.println("succ");
+
 			if (mode == 1)
 				System.out.println(self.Animalname + " do shower in sand.");
 			//TODO: do shower
