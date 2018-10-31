@@ -1,7 +1,7 @@
 package Person;
 
 public class EmployeeFactory {
-    public Employee getEmployee(){
+    public static Employee getEmployee(){
         return Employee.getEmployee();
     }
 }

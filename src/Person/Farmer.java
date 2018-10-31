@@ -56,7 +56,6 @@ public class Farmer extends People{
         employee.produceAnimal(method);
     }
 
-
     public void shopSomeSeeds(){ // shop all kinds of seeds
         CornSeed.count += 3;
         PastureSeed.count += 3;

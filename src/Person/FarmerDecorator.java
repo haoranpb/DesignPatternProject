@@ -3,8 +3,6 @@ import Base.Animal;
 import Animal.*;
 import Item.Building.AnimalFolds;
 
-import static Action.BreedAction.*;
-
 public class FarmerDecorator extends People {
     public FarmerDecorator(People people){ }
 
