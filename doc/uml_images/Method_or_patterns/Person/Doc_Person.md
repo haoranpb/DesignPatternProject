@@ -10,6 +10,14 @@
 
 ​	在选择养不同的动物时，采用了Command设计模式，在Order类中定义了RaisePig, RaiseSheep, RaiseChicken, RaiseFish四个操作，而这些操作在Order中调用，具体的实现机制被封装好。
 
+|       函数名        |                         作用                          |
+| :-----------------: | :---------------------------------------------------: |
+|   void execute()    | 执行调用养的行为，通过ChickenList增加相对应的动物数量 |
+|   void addOrder()   |                   添加相对应的命令                    |
+| void launchOrders() |                     调用命令执行                      |
+
+
+
 ### 3.1.2  class diagram
 
 ​	![](./command_person.png)
@@ -24,6 +32,15 @@
 
 ​	我们假设了一种情况，当农场中没有雇员的时候应该怎么办。按照正常情况来说，农场主在这个时候就会做起雇员应该做的事。FarmerDecorator类继承了People类，使得Farmer在没有雇员的情况类通过FarmerDecorator()实现装饰后描述，即可以做雇员应做的事。
 
+|           函数名           |                             作用                             |
+| :------------------------: | :----------------------------------------------------------: |
+|          Farmer()          |                      Farmer类的构造函数                      |
+| void acceptEmployeeVisit() | 查看雇员的数量，以此判断是否调用FarmerDecorator类去装饰Farmer |
+|     FarmerDecorator()      | FarmerDecorator类的构造函数，通过装饰使得Farmer可以进行养这个操作 |
+|      void raisePig()       | 增加养殖动物，同样的函数还包括raiseFish, raiseSheep, raiseChicken |
+
+
+
 ### 3.2.2 class diagram
 
 ​	![](./Decorator_person.png)
@@ -35,6 +52,15 @@
 ### 3.3.1 Api描述
 
 ​	通过EmployeeFactory来创建Employee，而Employee类继承自Farmer类。通过这种设计模式运用共享技术有效地支持大量细粒度的对象，避免重新的创建，占用内存。
+
+​	
+
+|        函数名         |                            作用                             |
+| :-------------------: | :---------------------------------------------------------: |
+|    employeeSomeOne    |                    Farmer雇佣雇员的操作                     |
+| Emplyee getEmployee() | 通过实现雇佣雇员的操作实现的具体行为，通过类EmployeeFactory |
+
+
 
 ### 3.3.2 class diagram
 
@@ -49,6 +75,14 @@
 ### 3.4.1 Api描述
 
 ​	在这个项目中，有很多重复的加法功能，如果一种特定类型的问题发生的频率足够高，那么可能就值得将该问题的各个实例表述为一个简单语言中的句子。这样就可以构建一个解释器，该解释器通过解释这些句子来解决该问题。
+
+​	
+
+|      函数名      |         作用         |
+| :--------------: | :------------------: |
+| void interpret() | 实现解释器的具体操作 |
+
+
 
 ### 3.4.2 class diagram
 
