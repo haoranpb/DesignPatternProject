@@ -1,32 +1,47 @@
+[TOC]
+
 # 1 题材综述
+
+​	本项目是模拟欢乐农场项目，是一种模拟经营的游戏。用户作为一个农场主，可以进行不同的操作以实现对农场的管理，在管理这个过程中，收获欢乐的同时也能够学习到如何经营一个农场，寓教于乐。
+
+​	农场主可以对农场进行管理，可以对农场的雇员、植物、动物以及商品进行管理。在模拟经营的过程当中可以招募雇员来进行农场的劳作，当然在没有雇员的情况下，农场主也会进行劳作；还可以指派雇员进行喂养、施肥以及收割等工作。对于生产出来的农产品，农场主也可以选择出售。
+
+​	站在植物与动物的角度来说，尽可能的模拟真实情况，动物可以进食、睡觉以及洗澡，也会死亡。并且在紧急情况下，看门狗也会发生狗吠。植物会进行授粉，分为人工授粉与自然传粉，在自然传粉中还细化了雌蕊雄蕊的部分，并且我们把植物分为四个成长阶段，在不同的成长阶段有不同的成长方法。
+
+​	在这个模拟经营的过程当中，用户可以感受分配工作、动植物管理等体验，也可以感受到动植物生长的乐趣，还能够通过自己的努力收获农作物并将之出售。从多方位感受这个游戏所能带来的体验，而动植物趋于真实性的模拟也能够让用户更贴近地感受这个农场。
+
+
 
 # 2 design pattern 汇总表
 
 | 编号 |   Design pattern name   | 实现个（套）数 | sample programs 个数 | 备注 |
 | :--: | :---------------------: | :------------: | :------------------: | :--: |
-|  1   |    Abstract Factory     |                |                      |      |
-|  2   |         Adapter         |                |                      |      |
-|  3   |         Bridge          |                |                      |      |
-|  4   |         Builder         |                |                      |      |
-|  5   | Chain of Responsibility |                |                      |      |
-|  6   |         Command         |                |                      |      |
-|  7   |        Composite        |                |                      |      |
-|  8   |        Decorator        |                |                      |      |
-|  9   |         Facade          |                |                      |      |
-|  10  |     Factory Method      |                |                      |      |
-|  11  |        Flyweight        |                |                      |      |
-|  12  |       Interpreter       |                |                      |      |
-|  13  |        Mediator         |                |                      |      |
-|  14  |         Memento         |                |                      |      |
-|  15  |        Observer         |                |                      |      |
-|  16  |        Prorotype        |                |                      |      |
-|  17  |        Observer         |                |                      |      |
-|  18  |          Proxy          |                |                      |      |
-|  19  |        Singleton        |                |                      |      |
-|  20  |          State          |                |                      |      |
-|  21  |        Strategy         |                |                      |      |
-|  22  |     Template Method     |                |                      |      |
-|  23  |         Visitor         |                |                      |      |
+|  1   |    Abstract Factory     |       2        |          2           |      |
+|  2   |         Adapter         |       1        |          1           |      |
+|  3   |         Bridge          |       1        |          1           |      |
+|  4   |         Builder         |       1        |          1           |      |
+|  5   | Chain of Responsibility |       1        |          1           |      |
+|  6   |         Command         |       1        |          1           |      |
+|  7   |        Composite        |       1        |          1           |      |
+|  8   |        Decorator        |       1        |          1           |      |
+|  9   |         Facade          |       1        |          1           |      |
+|  10  |     Factory Method      |       1        |          1           |      |
+|  11  |        Flyweight        |       1        |          1           |      |
+|  12  |       Interpreter       |       1        |          1           |      |
+|  13  |        Mediator         |       1        |          1           |      |
+|  14  |         Memento         |       1        |          1           |      |
+|  15  |        Observer         |       1        |          1           |      |
+|  16  |        Prorotype        |       2        |          2           |      |
+|  17  |        Observer         |       1        |          1           |      |
+|  18  |          Proxy          |       1        |          1           |      |
+|  19  |        Singleton        |       3        |          3           |      |
+|  20  |          State          |       1        |          1           |      |
+|  21  |        Strategy         |       3        |          3           |      |
+|  22  |     Template Method     |       3        |          3           |      |
+|  23  |         Visitor         |       1        |          1           |      |
+| 共计 |                         |       31       |          31          |      |
+
+
 
 # 3 design pattern 详述
 
@@ -173,11 +188,11 @@
 
 ​	Composite模式属于结构型模式的一种，该模式将对象组合成树形结构，以此来表示对象的“部分-整体”的层次结构。优点是提升了代码的复用性；在逻辑上将树结构中的根节点和叶子节点做同化处理，使高层模块的调用更加简单；经过重写基类Component中的行为函数runAction()，可以使单个对象和复杂对象的使用具有一致性；可以自由的增加节点。但是也会使逻辑会变得更加复杂；叶子节点和根节点都是实现类，而不是接口，违反了依赖倒置原则。
 
-### 3.7.1API描述
+### 3.7.1 API描述
 
 ​	场景：我们将Composite这一模式使用到了植物授粉这一过程中，定义基类ReproductiveOrgan，子类Flower 和Stamen、Pistil。同时Flower 包含Stamen、Pistil。实现了基本的树状结构。	
 
-### 3.7.2类图
+### 3.7.2 类图
 
 ![Composite_p](../uml_images/Method_or_patterns/Composite_p.png)
 
