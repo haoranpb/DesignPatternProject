@@ -25,14 +25,11 @@ public class testPerson {
         empolyee.produceAnimal("death");
         empolyee.getAnimalNumber();
 
-        System.out.println("Before we plant anything, we should shop some seeds");
+        System.out.println("\nBefore we plant anything, we should shop some seeds");
         farmer.shopSomeSeeds();
-        empolyee.plant();
-        empolyee.harvest();
-        empolyee.fertilize();
-        empolyee.fertilizePasture();
-        empolyee.pollination();
-        empolyee.harvest();
+        empolyee.getPlants();
+        empolyee.takeCareOfPlants();
+
 
         System.out.println("Get employee number via visitor!");
         EmloyeeNumberVisitor visitor = new EmloyeeNumberVisitor();

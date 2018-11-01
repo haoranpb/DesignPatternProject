@@ -1,5 +1,6 @@
 package Person;
 import Base.Animal;
+import Base.Plant;
 import Item.Building.Building;
 import Person.Order.RaiseChicken;
 import Person.Order.RaiseFish;
@@ -67,10 +68,7 @@ public class Farmer extends People{
     }
 
     public void showPlantProduct(){
-        System.out.println("\nLet's see what we have in the storage now.");
-        System.out.println("Pasture seeds: " + PastureSeed.count + "\tPasture product : " + PastureProduct.count);
-        System.out.println("Corn seeds: " + CornSeed.count + "\t\tCorn product : " + CornProduct.count);
-        System.out.println("Rice seeds: " + RiceSeed.count + "\t\tRice product : " + RiceProduct.count);
+        Test.show();
     }
 
     public void showAnimalProcut(){
