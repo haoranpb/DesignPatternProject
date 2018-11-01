@@ -8,11 +8,11 @@ import Base.Animal;
 public class testAnimal {
 	 public static void show() {
 		 	
-		 	System.out.println("-----------------------------------");
+		 	System.out.println("------------Adapter test-------------");
 		 	System.out.println("The dog is going to sleep.\n");
 		 	Animal.Petdog.sleep();
 		 	
-		 	System.out.println("-----------------------------------");
+		 	System.out.println("------------Singleton test------------");
 		 	System.out.println("The dog is going to bark.\n");
 		 	Animal.Petdog.bark();
 		 	
@@ -21,7 +21,7 @@ public class testAnimal {
 			Animal c= new Chicken();
 			Animal g= new Pig();
 			
-			System.out.println("-----------------------------------");
+			System.out.println("------------Template test--------------");
 			System.out.println("The animals are going to sleep.\n");
 			c.sleep();
 			g.sleep();
@@ -31,26 +31,26 @@ public class testAnimal {
 			c.fightWithDog();
 			g.fightWithDog();
 			
-			System.out.println("-----------------------------------");
+			System.out.println("-----------Bridge test-------------");
 			System.out.println("The animals are going to exercise.\n");
 			c.exe();
 			g.exe();
 			
-			System.out.println("-----------------------------------");
+			System.out.println("-----------Strategy test--------------");
 			System.out.println("Chicken can also run with your set.\n");
 			c.exewithset("Run");
 			
-			System.out.println("-----------------------------------");
+			System.out.println("-------------Prototype test------------");
 			System.out.println("The animals are going to breed.\n");
 			c.breed();
 			g.breed();
 			
-			System.out.println("-----------------------------------");
+			System.out.println("-------------Chain of Responsibility test--------------");
 			System.out.println("The animals are going to do shower.\n");
 			c.shower();
 			g.shower();
 			
-			System.out.println("-----------------------------------");
+			System.out.println("------------Abstract Factory test--------------");
 			System.out.println("Let's see how many product do we have before animals produce products.\n");
 			System.out.println("Chicken meat: " +Chickenmeat.amount+"\nEggs: "+ Eggs.amount) ;
 			System.out.println("Pork: " +Pork.amount) ;
@@ -70,7 +70,7 @@ public class testAnimal {
 			System.out.println("Chicken meat: " +Chickenmeat.amount+"\nEggs: "+ Eggs.amount) ;
 			System.out.println("Pork: " +Pork.amount) ;
 			
-			System.out.println("-----------------------------------");
+			System.out.println("------------Memento test------------");
 			System.out.println("Get currnet states of the animals.\n");
 			c.getstate();
 			g.getstate();
