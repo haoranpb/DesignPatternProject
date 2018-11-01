@@ -13,7 +13,7 @@
 | 11   | Flyweight Pattern               | Farmer, Employee, EmployeeFactory                            |                |                      |
 | 12   | Interpreter Pattern             | Interpreter, inpterpret                                      |                |                      |
 | 13   | Iterator Pattern                | Employee, AnimalList, Iterator                               |                |                      |
-| 14   | Mediator Pattern                | stamenAffectPistil, pistilAffectS                            |                |                      |
+| 14   | Mediator Pattern                | stamenAffectPistil, pistilAffectStamen                       |                |                      |
 | 15   | Memento Pattern                 | Animal,Memento                                               |                |                      |
 | 16   | Observer Pattern                | Employee, ProduceAnimal, Petdog                              |                |                      |
 | 17   | Prototype Pattern               | **Animal：**Animal,BreedAction,Chicken,Fish,Pig,Sheep；<br />**Item：**BuildingForPeople, ExquisiteBuilding, LuxuryBuilding, SimpleBuilding |                |                      |

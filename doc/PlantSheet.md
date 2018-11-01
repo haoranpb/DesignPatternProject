@@ -2,7 +2,7 @@
 | ---- | --------- | ------------------- | --------- | :------------: |
 | 1    | Abstract Factory | getRice, getCorn, getPasture |           |                |
 | 2    | Composite        | pollinate                                     |           |                |
-| 3    | Mediator         | stamenAffectPistil, pistilAffectS             |           |                |
+| 3    | Mediator         | stamenAffectPistil, pistilAffectStamen        |           |                |
 | 4    | State | moveToNext |           |                |
 | 5    | Strategy         | SpontaneousPollination, ArtificialPlooination |           |                |
 | 6    | Template Method  | fertilized, harvested                         |           |                |
