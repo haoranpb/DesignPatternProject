@@ -59,11 +59,11 @@ public class Farmer extends People{
     public void shopSomeSeeds(){ // shop all kinds of seeds
         CornSeed.count += 3;
         PastureSeed.count += 3;
-        RiceSeed.count += 3;
+        RiceSeed.count += 4;
 
         System.out.println("You just bought 3 corn seeds");
         System.out.println("You just bought 3 pasture seeds");
-        System.out.println("You just bought 3 rice seeds");
+        System.out.println("You just bought 4 rice seeds");
     }
 
     public void showPlantProduct(){

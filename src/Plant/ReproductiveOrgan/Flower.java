@@ -21,8 +21,8 @@ public class Flower extends ReproductiveOrgan{
      * Constructor
      */
     public Flower(){
-        stamen = new Stamen();
-        pistil = new Pistil();
+        this.addPistil(new Pistil());
+        this.addStamen(new Stamen());
     }
 
     /**
@@ -82,5 +82,12 @@ public class Flower extends ReproductiveOrgan{
      */
     public void setState(FlowerState fs){
         this.state = fs;
+    }
+
+    /**
+     * show flower message
+     */
+    public void showMessage(){
+        System.out.println("this is the flower.");
     }
 }

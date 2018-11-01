@@ -33,4 +33,9 @@ abstract public class ReproductiveOrgan {
      * @param fs new state
      */
     abstract public void setState(FlowerState fs);
+
+    /**
+     * show message
+     */
+    abstract public void showMessage();
 }

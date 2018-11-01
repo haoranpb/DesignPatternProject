@@ -57,4 +57,11 @@ public class Stamen extends ReproductiveOrgan {
         this.pollinate();
         pm.stamenAffectPistil();
     }
+
+    /**
+     * show stamen message
+     */
+    public void showMessage(){
+        System.out.println("this is the stamen.");
+    }
 }

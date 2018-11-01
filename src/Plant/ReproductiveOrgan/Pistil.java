@@ -57,4 +57,10 @@ public class Pistil extends ReproductiveOrgan {
         pm.pistilAffectStamen();
     }
 
+    /**
+     * show pistil message
+     */
+    public void showMessage(){
+        System.out.println("this is the pistil.");
+    }
 }
