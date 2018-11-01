@@ -125,7 +125,7 @@
 
 ### class diagram
 
-![AbstractFactory_p](.\uml_images\Method_or_patterns\Strategy.png)
+![AbstractFactory_p](.\uml_images\Method_or_patterns\Strategy_p.png)
 
 
 
