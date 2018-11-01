@@ -14,6 +14,7 @@ public class AnimalList {
     }
 
     public Interator getIterator(){
+        System.out.println("------------Iterator test in Person------------");
         return new Interator();
     }
 

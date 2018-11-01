@@ -31,7 +31,7 @@ public class Test {
      * get new plants
      */
     public static void AbstractFactoryTest() {
-        System.out.println("------------------Abstract Factory in Plant------------------");
+        System.out.println("\n\n------------------Abstract Factory in Plant------------------");
         System.out.println("Let's get different kinds of new plants!");
 
         PlantFactory pf = new PlantFactory();
@@ -62,7 +62,7 @@ public class Test {
      * show the structure of flower
      */
     public static void CompositeTest(Corn c) {
-        System.out.println("------------------Composite in Plant------------------");
+        System.out.println("\n\n------------------Composite in Plant------------------");
         System.out.println("Every corn has one reproductive organ, aka flower, which contains one pistil and one stamen.");
         c.flower.showMessage();
         c.flower.getPistil().showMessage();
@@ -74,7 +74,7 @@ public class Test {
      * pollinate
      */
     public static void MediatorAndStrategyTest() {
-        System.out.println("------------------Mediator & State & Strategy in Plant------------------");
+        System.out.println("\n\n------------------Mediator & State & Strategy in Plant------------------");
         System.out.println("Oops, those corns and rices need to be pollinated.");
         for (Corn item : PlantField.cornList) {
             PollinationStrategy ps = new SpontaneousPollination();
@@ -99,7 +99,7 @@ public class Test {
      * fertilize and harvest
      */
     public static void TemplateMethodAndStateTest() {
-        System.out.println("------------------State & Template Method in Plant------------------");
+        System.out.println("\n\n------------------State & Template Method in Plant------------------");
         System.out.println("Let's fertilize those plants!");
         for (Corn item : PlantField.cornList) {
             item.fertilized();
