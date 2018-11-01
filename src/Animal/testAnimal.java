@@ -7,7 +7,7 @@ import Base.Animal;
 
 public class testAnimal {
 	 public static void show() {
-		 	
+		 	System.out.println("First, there's a pet dog in our farm.\n");
 		 	System.out.println("------------Adapter test-------------");
 		 	System.out.println("The dog is going to sleep.\n");
 		 	Animal.Petdog.sleep();
@@ -17,7 +17,7 @@ public class testAnimal {
 		 	Animal.Petdog.bark();
 		 	
 		 	System.out.println("-----------------------------------");
-		    System.out.println("Creating a new chicken and a new pig.");
+		    System.out.println("And now a new chicken and a new pig are added into our farm.");
 			Animal c= new Chicken();
 			Animal g= new Pig();
 			
@@ -37,7 +37,7 @@ public class testAnimal {
 			g.exe();
 			
 			System.out.println("-----------Strategy test--------------");
-			System.out.println("Chicken can also run with your set.\n");
+			System.out.println("Chicken can also run after 'trained'.\n");
 			c.exewithset("Run");
 			
 			System.out.println("-------------Prototype test------------");
@@ -71,11 +71,11 @@ public class testAnimal {
 			System.out.println("Pork: " +Pork.amount) ;
 			
 			System.out.println("------------Memento test------------");
-			System.out.println("Get currnet states of the animals.\n");
+			System.out.println("Now let's check the states of the animals.\n");
 			c.getstate();
 			g.getstate();
 			
-			System.out.println("-----------------------------------");
+			System.out.println("I missed them, so I told the god to give them back to me.");
 			System.out.println("The dead animals regain life.\n");
 			c.setstate();
 			g.setstate();
