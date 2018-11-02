@@ -1,6 +1,6 @@
 | 编号 | Design Pattern | Class/Interface API | framework | sample program |
 | ---- | --------- | ------------------- | --------- | :------------: |
-| 1    | Cammond   | Broker, Order, RaiseChicken, RaisePig, RaiseFish, RaiseSheep | 7 | 3 |
+| 1    | Command | Broker, Order, RaiseChicken, RaisePig, RaiseFish, RaiseSheep | 7 | 3 |
 | 2    | Decorator | People, Farmer, Employee, FarmerDecorator | 7 | 3 |
 | 3    | Facade | Farmer, RaiseChicken, RaisePig, RaiseFish, RaiseSheep | 7 | 3 |
 | 4    | FlyWeight | Farmer, Employee, EmployeeFactory | 7 | 3 |
