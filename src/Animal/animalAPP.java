@@ -5,7 +5,7 @@ import Item.AgricultureProducts.*;
 import Item.Building.PlantField;
 import Base.Animal;
 
-public class testAnimal {
+public class animalAPP {
 	 public static void show() {
 		 	System.out.println("First, there's a pet dog in our farm.\n");
 		 	System.out.println("------------Adapter test-------------");

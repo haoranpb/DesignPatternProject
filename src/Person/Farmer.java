@@ -1,6 +1,5 @@
 package Person;
 import Base.Animal;
-import Base.Plant;
 import Item.Building.Building;
 import Person.Order.RaiseChicken;
 import Person.Order.RaiseFish;
@@ -68,7 +67,7 @@ public class Farmer extends People{
     }
 
     public void showPlantProduct(){
-        Test.show();
+        plantApp.show();
     }
 
     public void showAnimalProcut(){

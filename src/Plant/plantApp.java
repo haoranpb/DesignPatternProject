@@ -1,5 +1,5 @@
 /**
- * Test
+ * App
  * for testing
  * @author TMY
  */
@@ -15,7 +15,7 @@ import Plant.Strategy.PollinationStrategy;
 import Plant.Strategy.SpontaneousPollination;
 import Item.Building.PlantField;
 
-public class Test {
+public class plantApp {
     /**
      * show numbers of everything in the plant storage
      */

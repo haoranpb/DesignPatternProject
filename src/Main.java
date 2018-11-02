@@ -8,8 +8,13 @@ public class Main {
     public static void main(String[] args) {
         // You will find sample applications in the function below
         // We run all the API we provide, and there is no error
-        testAnimal.show();
-        Test.show();
-        testPerson.show();
+        personTest.show();
+        plantTest.show();
+        animalTest.show();
+
+        // App finished
+        animalAPP.show();
+        plantApp.show();
+        personApp.show();
     }
 }

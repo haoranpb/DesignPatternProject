@@ -3,9 +3,7 @@ import Animal.*;
 import Base.Animal;
 import Item.Building.*;
 import Person.Order.*;
-import Plant.AbstractFactory.PlantFactory;
 import Plant.*;
-import Plant.Strategy.*;
 
 import java.util.ArrayList;
 
@@ -22,17 +20,17 @@ public class Employee extends People{
     private Employee(){ }
 
     public void takeCareOfPlants(){ // Animal or Plants
-        Test.TemplateMethodAndStateTest();
-        Test.show();
+        plantApp.TemplateMethodAndStateTest();
+        plantApp.show();
 
-        Test.MediatorAndStrategyTest();
-        Test.show();
+        plantApp.MediatorAndStrategyTest();
+        plantApp.show();
     }
 
     public void getPlants(){
-        Test.AbstractFactoryTest();
-        Test.show();
-        Test.CompositeTest(PlantField.cornList.get(0));
+        plantApp.AbstractFactoryTest();
+        plantApp.show();
+        plantApp.CompositeTest(PlantField.cornList.get(0));
     }
 
     @Override

@@ -1,7 +1,7 @@
 package Person;
 
 
-public class testPerson {
+public class personApp {
     public static void show(){
         System.out.println("\n\n------------Singleton test in Person------------");
         System.out.println("The program should begin with creating a Farmer!");
